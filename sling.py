@@ -1,3 +1,6 @@
+# I am very reluctant about having my notes overwritten; so we stage them twice,
+# once as a throw-away Dropbox git repo (iPhone access), and once as production
+# directory (commandline access), both clones of a private Github repo.
 import os
 import time, datetime
 from git import *
@@ -11,10 +14,15 @@ exts = ['.txt', '.otl']
 
 dirs = {'dropbox_dir': '/Users/henry/Dropbox/Notes/', 'local_dir': '/Users/henry/Programming/Notes/'}
 
-# commit each directory first
-repo = Repo(dirs['local_dir'])
-ts = time.time()
-current_time = datetime.datetime.fromtimestamp(ts).strftime('%a %b %d %I:%M:%S %Y')
+for git in dirs.keys():
+    repo = Repo(dirs[git])
+    repo.git.add('.')
+    ts = time.time()
+    current_time = datetime.datetime.fromtimestamp(ts).strftime('%a %b %d %I:%M:%S %Y')
+    repo.git.commit('-a', "-m '%s'" % current_time)
+
+
+repo.git.commit('-a','-m %s' % current_time)
 
 
 if push_to:
