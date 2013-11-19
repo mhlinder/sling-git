@@ -2,7 +2,7 @@ sling-git
 =========
 
 Say you have two git repositories that you want to keep up to date in separate
-places for some reason---like, say, Dropbox here---and you'll only ever
+places for some reason--like, say, Dropbox--and you'll only ever
 update one or the other and you'll never want two versions at once.
 
 So basically, you want to sling your git repository from one computer to
