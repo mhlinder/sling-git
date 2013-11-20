@@ -11,6 +11,7 @@ sling-git does.
 
 How to Use It
 -------------
+You'll probably want to create an alias for `sling` from `sling.sh`.
 1. Initialize a bare repository, and clone it in two different places on the same computer (eg, Dropbox and a local copy), `dir1` and `dir2`, say. Add these in the script.
 2. Every time you update something in `dir1`, run `sling`; every time you update something in `dir2`, run `sling slang`.
 3. A timestamped commit will be made every time in `dir1`, and this commit will be slung to `dir2`.
