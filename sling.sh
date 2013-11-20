@@ -7,8 +7,6 @@ dir2=/Dropbox/Notes
 
 src=$HOME$dir1
 dst=$HOME$dir2
-src=0
-dst=1
 
 # get options
 while getopts s:d: option
