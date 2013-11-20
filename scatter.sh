@@ -1,5 +1,5 @@
 #!/bin/bash
-# scatter all github-hosted local repos to github
+# scatter all remote-origin local repos to github
 
 START=`pwd`
 main=$HOME/Programming
