@@ -21,6 +21,10 @@ Specifying `dir1` and `dir2`
 1. There's a default.
 2. Or run `sling -s dir1 -d dir2` or `sling -s dir1 -d dir2 slang`, depending.
 
+`scatter`
+-------
+`scatter` will sling all local repos to their origin remote, without forcing any other repos to pull. `scatter scetter` will do the same thing, but pull instead of push.
+
 Todo
 ----
 Sling over ssh key connection

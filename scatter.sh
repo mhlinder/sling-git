@@ -1,4 +1,5 @@
 #!/bin/bash
+# scatter all github-hosted local repos to github
 
 START=`pwd`
 main=$HOME/Programming
@@ -15,6 +16,13 @@ if [ "$1" != "scetter" ]; then
         git commit -a -m "scattering to github $td" --allow-empty
         git push origin master
         git push origin develop
+    done
+else
+    for repo in `find $main -name .git | awk '!/\.vim/ { print }'`
+    do
+        cd ${repo%\/\.git}
+        git pull origin master
+        git pull origin develop
     done
 fi
 
