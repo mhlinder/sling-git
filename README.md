@@ -20,9 +20,8 @@ same thing, but pull instead of push.
 Usage
 -----
 By default, the current directory is used as the source of an operation.
-``sling [repo]``
-``slang [repo]``
-``slingslang [repo1] [repo2]``
-
-``scatter [dir]``
-``scetter [dir]``
++ ``sling [repo]``
++ ``slang [repo]``
++ ``slingslang [repo1] [repo2]``
++ ``scatter [dir]``
++ ``scetter [dir]``
