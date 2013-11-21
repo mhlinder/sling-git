@@ -1,7 +1,15 @@
 #!/bin/bash
 # push all repos to origin
 
-main=$1
+# get options
+if [ $# -eq 0 ]; then
+    main='.'
+elif [ $# -eq 1 ]; then
+    main=$1
+else
+    echo 'Usage: scetter dir'
+    exit
+fi
 
 # get timestamp
 td=`date`

@@ -2,7 +2,14 @@
 # pull a directory
 
 # get options
-dst=$1
+if [ $# -eq 0 ]; then
+    dst='.'
+elif [ $# -eq 1 ]; then
+    dst=$1
+else
+    echo 'Usage: sling repo'
+    exit
+fi
 
 # get timestamp
 td=`date`

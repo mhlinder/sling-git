@@ -16,3 +16,13 @@ scatter
 `scatter` will sling all local repos to their origin remote,
 without forcing any other repos to pull. `scetter` will do the
 same thing, but pull instead of push.
+
+Usage
+-----
+By default, the current directory is used as the source of an operation.
+``sling [repo]``
+``slang [repo]``
+``slingslang [repo1] [repo2]``
+
+``scatter [dir]``
+``scetter [dir]``

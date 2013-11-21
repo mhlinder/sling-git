@@ -1,13 +1,23 @@
 #!/bin/bash
-# push in one directory and pull in another
+# push one directory and pull another
 
 # get options
+src='.'
 src=$1
 dst=$2
-
-# get timestamp
-td=`date`
-echo $td
+if [ $# -eq 0 ]; then
+    echo 'Usage: slingslang repo1 repo2'
+    exit
+elif [ $# -eq 1 ]; then
+    src='.'
+    dst=$1
+elif [ $# -eq 2 ]; then
+    src=$1
+    dst=$2
+else
+    echo 'Usage: slingslang repo1 repo2'
+    exit
+fi
 
 sling $src
 slang $dst

@@ -2,7 +2,14 @@
 # push a directory
 
 # get options
-src=$1
+if [ $# -eq 0 ]; then
+    src='.'
+elif [ $# -eq 1 ]; then
+    src=$1
+else
+    echo 'Usage: sling repo'
+    exit
+fi
 
 # get timestamp
 td=`date`
