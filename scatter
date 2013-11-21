@@ -11,11 +11,7 @@ else
     exit
 fi
 
-# get timestamp
-td=`date`
-echo $td
-
 # find all non-vim repos
 for repo in `find $main -name .git | awk '!/\.vim/ { print }'`; do
-    sling $repo
+    sling ${repo/\/\.git}
 done
