@@ -13,7 +13,6 @@ fi
 
 # get timestamp
 td=`date`
-echo $td
 
 # pull to dest
 cd $dst

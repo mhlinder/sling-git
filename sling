@@ -13,7 +13,6 @@ fi
 
 # get timestamp
 td=`date`
-echo $td
 
 # commit and push from source
 cd $src
