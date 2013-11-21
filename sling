@@ -18,5 +18,5 @@ echo $td
 # commit and push from source
 cd $src
 git add .
-git commit -a -m "$td" --allow-empty
+git commit -a -m "$td"
 git push origin

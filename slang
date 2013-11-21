@@ -18,5 +18,5 @@ echo $td
 # pull to dest
 cd $dst
 git add .
-git commit -a -m "$td" --allow-empty
+git commit -a -m "$td"
 git pull origin
