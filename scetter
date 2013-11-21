@@ -1,0 +1,13 @@
+#!/bin/bash
+# push all repos to origin
+
+main=$1
+
+# get timestamp
+td=`date`
+echo $td
+
+# find all non-vim repos
+for repo in `find $main -name .git | awk '!/\.vim/ { print }'`; do
+    slang $repo
+done
