@@ -3,7 +3,7 @@
 
 # get options
 if [ $# -eq 0 ]; then
-    dst='.'
+    dst=`pwd`
 elif [ $# -eq 1 ]; then
     dst=$1
 else

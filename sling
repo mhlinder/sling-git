@@ -3,7 +3,7 @@
 
 # get options
 if [ $# -eq 0 ]; then
-    src='.'
+    src=`pwd`
 elif [ $# -eq 1 ]; then
     src=$1
 else

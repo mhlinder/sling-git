@@ -9,7 +9,7 @@ if [ $# -eq 0 ]; then
     echo 'Usage: slingslang repo1 repo2'
     exit
 elif [ $# -eq 1 ]; then
-    src='.'
+    src=`pwd`
     dst=$1
 elif [ $# -eq 2 ]; then
     src=$1

@@ -3,7 +3,7 @@
 
 # get options
 if [ $# -eq 0 ]; then
-    main='.'
+    main=`pwd`
 elif [ $# -eq 1 ]; then
     main=$1
 else
