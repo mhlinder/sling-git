@@ -1,15 +1,15 @@
 #!/bin/bash
-# push a directory
+# pull a directory
 
 # get options
-src=$1
+dst=$1
 
 # get timestamp
 td=`date`
 echo $td
 
-# commit and push from source
-cd $src
+# pull to dest
+cd $dst
 git add .
 git commit -a -m "$td" --allow-empty
-git push origin
+git pull origin

@@ -25,10 +25,6 @@ Specifying `dir1` and `dir2`
 -------
 `scatter` will sling all local repos to their origin remote, without forcing any other repos to pull. `scatter scetter` will do the same thing, but pull instead of push.
 
-`acks`
------
-Sometimes you're trying to find a fuzzy-match a string in a file and you just wanna acks for it and get it; so run `acks` and do just that.
-
 Todo
 ----
 Sling over ssh key connection
